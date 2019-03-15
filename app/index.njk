@@ -1,0 +1,10 @@
+{% extends "_template.njk" %} 
+{% block main %}
+ <h1>hi hello</h1>
+    {% for card in cards %}
+        <div class="gallery__item">
+            <h2>{{card.title}}</h2>
+            <img src="{{card.image}}">
+        </div>
+    {% endfor %}
+{% endblock %}
