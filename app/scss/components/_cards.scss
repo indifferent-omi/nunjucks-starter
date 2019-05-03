@@ -1,0 +1,102 @@
+
+/*
+///////////////////////////////////
+Card Resets(bootstrap required) 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.card {
+    border: none;
+    border-radius: 0;
+}
+.icon {
+    i {
+        font-size: inherit;
+    }
+}
+
+/*
+///////////////////////////////////
+Card Styles goes From Here 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+.card{
+/*-- Card 1 --*/
+    &-1{
+        .card-icon{
+            
+        }
+        .card-body{
+            .card-title{
+
+            }
+            p{
+
+            }
+        }
+    }
+    &-2{
+        .card-icon{
+
+        }
+        .card-body{
+            .card-image{
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+
+            }
+        }
+        &.card-style-list{
+            display: flex;
+        }
+    }
+    &-3{
+        .card-image{
+            position: relative;
+        }
+        .card-body{
+            .card-image{
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                
+            }
+        }
+        .hover-items{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &-4{
+        .card-image{
+            position: relative;
+        }
+        .card-body{
+            .card-image{
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                
+            }
+        }
+        .hover-items{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .card-badge{
+
+        }
+    }
+    
+}
+
+
+

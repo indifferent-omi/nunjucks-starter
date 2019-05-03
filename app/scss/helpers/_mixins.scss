@@ -113,6 +113,37 @@
     }
 }
 
+
+@mixin section-padding-both($value){
+    padding-top:60px;
+    padding-bottom:60px;
+    @include tablet{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+    @include desktops{
+        padding-top:$value;
+        padding-bottom:$value;
+    }
+}
+@mixin section-padding-top($value){
+    padding-top:60px;
+    @include tablet{
+        padding-top:80px;
+    }
+    @include desktops{
+        padding-top:$value;
+    }
+}
+@mixin section-padding-bottom($value){
+    padding-bottom:60px;
+    @include tablet{
+        padding-bottom:80px;
+    }
+    @include desktops{
+        padding-bottom:$value;
+    }
+}
 //-------------
 //PlaceHolders
 %border-bottom {

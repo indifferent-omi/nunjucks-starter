@@ -1,10 +1,7 @@
-{% extends "_template.njk" %} 
+{% extends "template.njk" %}
 {% block main %}
- <h1>hi hello</h1>
-    {% for card in cards %}
-        <div class="gallery__item">
-            <h2>{{card.title}}</h2>
-            <img src="{{card.image}}">
-        </div>
-    {% endfor %}
+    <h1>hello</h1>
+{% endblock %}
+{% block footer %}
+    <h3>this is Footer</h3>
 {% endblock %}

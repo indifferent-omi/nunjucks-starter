@@ -33,18 +33,18 @@ var minImg = (argv.demo) ? false : (argv.pub) ? true : false;
 const path = {
     root:'./',
     html: './app/*.+(html|njk)',
-    _partialFiles: './app/includes/**/*.+(htm|njk)',
+    _partialFiles: './app/partials/**/*.+(htm|njk)',
     _partial: './app/partials/',
     php: './app/php/**/*.php',
     fonts: './app/fonts/**/*.*',
     js: './app/js/*.*',
     scss: './app/scss/**/*.scss',
-    img: './app/image/**/*.+(png|jpg|gif|ico)',
+    img: './app/image/**/*.+(png|jpg|gif|ico|svg)',
     data:'./app/data/data.json',
-    plugins: './app/fonts/**/*.*',
+    plugins: './app/plugins/**/*.*',
     plugin :{
-        js: './app/plugins/js/*.js',
-        css: './app/plugins/js/*.css'
+        js: './app/plugin/js/*.js',
+        css: './app/plugin/css/*.css'
     }
 };
 const dest = {

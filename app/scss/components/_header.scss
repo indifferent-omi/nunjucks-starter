@@ -1,0 +1,38 @@
+.site-nav{
+    position: relative;
+
+    .navbar-nav{
+        @include till-desktop{
+            padding: 20px;
+        }
+        .nav-item {
+            .nav-link{
+                
+            }
+        }
+    }
+
+
+
+
+    .navbar-collapse{
+        @include till-desktop{
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background:#ccc;
+            width: 100%;
+        }
+    }
+    .dropdown-item.active, 
+    .dropdown-item:active{
+        background: transparent;
+        color: inherit;
+    }
+    .dropdown{
+        .dropdown-menu{
+            
+        }
+    }
+    
+}

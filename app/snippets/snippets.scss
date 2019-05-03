@@ -1,0 +1,39 @@
+
+
+.messonry-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    @include desktops{
+        margin-bottom: 40px;
+    }
+    .btn {
+        
+        &:hover{
+          
+        }
+    }
+}
+
+.mesonry-list {
+    margin: 0 -5px;
+    .recommend-25 {
+        padding: 0 8px;
+        margin-bottom: 15px;
+    }
+    .resizer,.list-25 {
+        width: 100%;
+        @include tablet {
+            width: 50%;
+        }
+        @include desktops {
+            width: 33.3333%;
+        }
+    }
+}
+
+.recommend-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

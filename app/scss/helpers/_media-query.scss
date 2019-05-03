@@ -1,5 +1,9 @@
 /*=== Media Query ===*/
-
+@mixin brk-point($mw) {
+    @media(min-width: $mw) {
+        @content;
+    }
+}
 @mixin mobile-xs {
     @media(min-width: 320px) {
         @content;
@@ -44,6 +48,11 @@
 
 @mixin extra-large-desktops {
     @media(min-width: 1600px) {
+        @content;
+    }
+}
+@mixin till-desktop {
+    @media (min-width: 320px) and (max-width:992px) {
         @content;
     }
 }
