@@ -1,0 +1,54 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+
+.testimonial-section--08 {
+  padding-bottom: 42px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 1;
+  &__shape-1{
+    position: absolute;
+    top: 42.3%;
+    left: 36%;
+    z-index: -1;
+  }
+  &__shape-2{
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+    z-index: -1;
+  }
+  &__shape-3{
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    z-index: -1;
+  }
+  @media (min-width: 575px) {
+    padding-top: 67px;
+    padding-bottom: 70px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .section-title-block {
+    // text-align: center;
+    margin-bottom: 30px;
+    @media (min-width:575px) {
+        margin-bottom: 40px;
+    }
+    @media (min-width:992px) {
+        margin-bottom: 50px;
+    }
+  }
+  .slick-dots{
+    margin-top: 23px;
+    @media (min-width:575px) {
+      margin-top: 30px;
+    }
+    @media (min-width:992px) {
+      margin-top: 42px;
+    }
+  }
+}

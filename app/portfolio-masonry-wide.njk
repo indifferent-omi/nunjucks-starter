@@ -1,0 +1,50 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
+{% import "components/Cards/cards.njk" as Card %}
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--dark",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3 inner-btn"
+  })}}
+    <!-- Breadcrumb Section Start -->
+    {{Breadcrumb.render({
+      "column":"col-xl-8 col-lg-10",
+      "title":"Portfolio Grid-2 Columns",
+      "text":"An enim nullam tempor donec enim ipsum porta justo  congue purus tempor <br class='d-none d-xs-block'>  donec enim ipsum porta justo pretium ligula ",
+      "pageName":"Portfolio"
+    })}}
+  <!-- Breadcrumb Section End --> 
+
+<div class="portfolio-section-padding">
+  <div class="container">
+    <div class="row g-0 card-radius-0">
+      {% for item in portfolio2col %}
+        <div class="col-md-6 col-sm-8 col-xs-9">
+          {{Card.portfolio({
+            image:item.image,
+            title:item.title,
+            text:item.text
+          })}}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+  <!-- Cta Section Start -->
+  {% include "sections/Cta/CtaSectionOne.njk" %}
+  <!-- Cta Section End -->
+  <!-- Footer Section Start -->
+  {% include "sections/Footer/FooterSectionOneDark.njk" %}
+  <!-- Footer Section End -->
+    
+{% endblock %}

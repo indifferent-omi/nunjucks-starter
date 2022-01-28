@@ -1,0 +1,76 @@
+{% macro normal(obj) %}
+    <div class="widget {{obj.modifier}}">
+        {% if obj.fontIcon %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                <i class="{{obj.fontIcon}}"></i>
+            </div>
+        {% endif %}
+        {% if obj.iconImage %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                <img src={{obj.iconImage}} alt="icon">
+            </div>
+        {% endif %}
+        {% if obj.image %}
+            <div class="widget-image{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                <img src={{obj.image}} alt="icon">
+            </div>
+        {% endif %}
+        {% if obj.iconText %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                {{obj.iconText}}
+            </div>
+        {% endif %}
+        <div class="widget-body">
+            <h3 class='widget-title{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title | safe}}</h3>
+            <p class='widget-text{{" " + obj.textClass if obj.textClass}}'>{{obj.text | safe}}</p>
+            {% if obj.custom %}
+                {{obj.custom | safe}}
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro column(obj) %}
+    <div class="widget widget-column {{obj.modifier}}">
+        {% if obj.fontIcon %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                <i class="{{obj.fontIcon}}"></i>
+            </div>
+        {% endif %}
+        {% if obj.iconImage %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                <img src={{obj.iconImage}} alt="icon">
+            </div>
+        {% endif %}
+        {% if obj.iconText %}
+            <div class="widget-icon{{' ' + obj.iconWrapperClass if obj.iconWrapperClass}}">
+                {{obj.iconText}}
+            </div>
+        {% endif %}
+        <div class="widget-text">
+            <h3 class='widget-title{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title | safe}}</h3>
+            <p class='widget-text{{" " + obj.textClass if obj.textClass}}'>{{obj.text | safe}}</p>
+            {% if obj.custom %}
+                {{obj.custom | safe}}
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}
+{% macro counter(obj) %}
+    <div class="widget widget-column {{obj.modifier}}">
+        <h3 class='widget-title{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title | safe}}</h3>
+        <p class='widget-text{{" " + obj.textClass if obj.textClass}}'>{{obj.text | safe}}</p>
+    </div>
+{% endmacro %}
+
+{% macro card(obj) %}
+    <div class="widget widget-card widget-card-center {{obj.class}}">
+        <div class="widget-icon">
+            <img src="{{obj.icon}}" alt="widget" class="make-it-inline"/>
+        </div>
+        <div class="widget-text">
+            <h3 class="widget-title heading-{{obj.mode}}">{{obj.title | safe}}</h3>
+            <p class="text-{{obj.mode}}">{{obj.text | safe}}</p>
+        </div>
+    </div>
+{% endmacro %}

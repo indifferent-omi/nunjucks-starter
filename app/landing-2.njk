@@ -1,0 +1,51 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "sections/Contents/l2/ContentSectionTwo.njk" as ContentSection %}
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--dark",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--2"
+  })}}
+    <!-- Hero Section Start -->
+      {% include "sections/Hero/HeroSectionTwo.njk" %}
+    <!-- Hero Section End -->  
+    <!-- Brand Section Start -->
+      {% include "sections/Brand/BrandSectionTwo.njk" %}
+    <!-- Brand Section End -->
+    <!-- Feature Section Start -->
+      {% include "sections/Feature/FeatureSectionTwo.njk" %}
+    <!-- Feature Section End -->
+    <!-- Content One Section Start -->
+      {% include "sections/Contents/l2/ContentSectionOne.njk" %}
+    <!-- Content One Section End -->  
+      <!-- Content Two Section Start -->
+      {{ContentSection.render({className:"bg-vogue-opacity-02"})}}
+      <!-- Content Two Section End -->  
+    <!-- Video Section Start -->
+      {% include "sections/Video/VideoSectionOne.njk" %}
+    <!-- Video Section End -->
+    <!-- Pricing Section Start -->
+      {% include "sections/Pricing/PricingSectionTwo.njk" %}
+    <!-- Pricing Section End -->
+    <!-- Testimonial Section Start -->
+      {% include "sections/Testimonial/TestimonialSectionTwo.njk" %}
+    <!-- Testimonial Section End -->
+    <!-- Feature Section Start -->
+      {% include "sections/Faq/FaqSectionOne.njk" %}
+    <!-- Feature Section End -->
+    <!-- Feature Section Start -->
+      {% include "sections/Cta/CtaSectionTwo.njk" %}
+    <!-- Feature Section End -->
+    <!-- Footer Section Start -->
+      {% include "sections/Footer/FooterSectionOneDark.njk" %}
+    <!-- Footer Section End -->
+
+    
+{% endblock %}

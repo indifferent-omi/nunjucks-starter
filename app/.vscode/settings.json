@@ -1,3 +1,14 @@
 {
-    "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "liveServer.settings.port": 5501,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[nunjucks]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
 }

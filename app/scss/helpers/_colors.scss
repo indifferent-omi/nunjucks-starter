@@ -1,0 +1,31 @@
+@use "../abstracts/colors" as *;
+
+@each $label, $value in $colors {
+  .bg-#{$label} {
+    background-color: $value !important;
+  }
+}
+@each $label, $value in $colors {
+  .text-#{$label} {
+    color: $value !important;
+  }
+}
+
+.heading-dark {
+  color: $headingDark;
+}
+.heading-light {
+  color: $headingLight;
+}
+/* used on Landing 2 Hero */
+.bg-gradient-overlay--1 {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: "";
+    inset: 0;
+    background: linear-gradient(105.1deg, #645cfe 0.51%, #dd00f0 108.48%);
+    opacity: 0.95;
+    position: absolute;
+  }
+}

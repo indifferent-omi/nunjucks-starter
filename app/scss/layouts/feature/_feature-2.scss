@@ -1,0 +1,47 @@
+.feature-section--02 {
+  padding-top: 55px;
+  padding-bottom: 60px;
+  @media (min-width: 575px) {
+    padding-top: 73px;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 136px;
+    padding-bottom: 136px;
+  }
+  &__content {
+    .section-title-block {
+      p {
+        @media (min-width: 768px) {
+          padding-right: 20%;
+        }
+        @media (min-width: 992px) {
+          padding-right: 16%;
+        }
+        @media (min-width: 1200px) {
+          padding-right: 20%;
+        }
+        @media (min-width: 1400px) {
+          padding-right: 18%;
+        }
+      }
+    }
+    .btn {
+      margin-top: 25px;
+      @media (min-width: 575px) {
+        margin-top: 35px;
+      }
+    }
+  }
+  &__widget-wrapper {
+    margin-bottom: -30px;
+    > div + div {
+      @media (min-width: 1200px) {
+        padding-top: 30px;
+      }
+    }
+    .widget {
+      margin-bottom: 30px;
+    }
+  }
+}

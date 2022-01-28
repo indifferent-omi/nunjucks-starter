@@ -1,0 +1,95 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.footer-section--01 {
+  padding-top: 60px;
+  @media (min-width: 575px) {
+    padding-top: 83px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 100px;
+  }
+  .footer-brand {
+    margin-bottom: 30px;
+  }
+  .footer-social {
+    margin-top: 33px;
+  }
+  .footer-title {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+    @include line-height(24, 14);
+  }
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+.footer-list {
+  margin-bottom: -7.5px;
+  li {
+    font-size: 14px;
+    @include line-height(24, 14);
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+  }
+}
+.footer-social {
+  display: flex;
+  margin: 0 -10px;
+  a {
+    @include square(30px, 500px);
+    @include flexAllCenter;
+    background: rgba($white, 0.5);
+    color: $vogue;
+    margin: 0 10px;
+    font-size: 13px;
+    &:hover {
+      background: $white;
+      color: $blue-ribbon;
+    }
+  }
+  &--dark {
+    display: flex;
+    margin: 0 -10px;
+    font-size: 13px;
+    a {
+      @include square(30px, 500px);
+      @include flexAllCenter;
+      background: rgba($vogue, 0.4);
+      color: #fff;
+      margin: 0 10px;
+      font-size: 12px;
+      &:hover {
+        background: $blue-ribbon;
+      }
+    }
+  }
+}
+
+.footer-section--01__copyright {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  margin-top: 16px;
+  @media (min-width: 768px) {
+    margin-top: 50px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 67px;
+  }
+  p {
+    font-size: 14px;
+    @include line-height(24, 14);
+  }
+}
+
+.copyright-border {
+  border-top: 1px solid rgba(#ffffff, 0.1);
+  &--dark {
+    border-top: 1px solid rgba($vogue, 0.1);
+  }
+}

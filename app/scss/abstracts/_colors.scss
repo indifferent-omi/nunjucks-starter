@@ -1,0 +1,41 @@
+$white: #fff;
+$black: #000;
+$caribbean-green: #01d2a1;
+$cornflower-blue: #645cfe;
+$rose: #ff1181;
+$blue-ribbon: #0d59ef;
+$vogue: #042552;
+$my-sin: #ffb619;
+$yellow: #FFC83E;
+$turquoise: #02c3fe;
+$orange: #ff6c40;
+$ocean-green: #43ba7f;
+$red: #EB5757;
+$colors: (
+  "caribbean-green": $caribbean-green,
+  "cornflower-blue": $cornflower-blue,
+  "rose": $rose,
+  "yellow": $yellow,
+  "blue-ribbon": $blue-ribbon,
+  "blue-ribbon-opacity-02": rgba($blue-ribbon, 0.02),
+  "vogue-opacity-02": rgba($vogue, 0.02),
+  "vogue-opacity-03": rgba($vogue, 0.03),
+  "white-opacity-02": rgba($white, 0.02),
+  "cornflower-blue-opacity-02": rgba($cornflower-blue, 0.02),
+  "caribbean-green-opacity-02": rgba($caribbean-green, 0.02),
+  "caribbean-green-opacity-07": rgba($caribbean-green, 0.07),
+  "turquoise-opacity-02": rgba($turquoise, 0.02),
+  "my-sin": $my-sin,
+  "turquoise": $turquoise,
+  "orange": $orange,
+  "vogue": $vogue,
+  "ocean-green": $ocean-green,
+  "red":$red
+);
+
+$headingDark: $vogue;
+$headingLight: $white;
+$textDark: rgba($vogue, 0.7);
+$textLight: rgba($white, 0.7);
+$header-link-color: #000;
+$btn-link-color: #000;

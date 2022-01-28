@@ -1,0 +1,173 @@
+@mixin flexAllCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin inline-flex-center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+}
+@mixin flex-column($x, $y) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  flex-direction: column;
+}
+@mixin square($size, $corner) {
+  min-width: $size;
+  max-width: $size;
+  min-height: $size;
+  max-height: $size;
+  border-radius: $corner;
+}
+@mixin size($sizeY ,$sizeX : $sizeY) {
+  min-width: $sizeX;
+  max-width: $sizeX;
+  min-height: $sizeY;
+  max-height: $sizeY;
+}
+@mixin translateCenter {
+  transform: translateX(-50%) translateY(-50%);
+}
+@mixin absolute( $y: 0, $x: 0, $sizeY: 100%, $sizeX: 100%, $zIndex: unset) {
+  position: absolute;
+  top: $y;
+  left: $x;
+  height: $sizeY;
+  width: $sizeX;
+  z-index: $zIndex;
+}
+
+@mixin overlay($color, $opaity) {
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    inset: 0px;
+    z-index: -1;
+    background: rgba($color, $opaity);
+    position: absolute;
+  }
+}
+@mixin absolute-default($size) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $size;
+  width: $size;
+}
+@mixin object-bg-image {
+  @include absolute-default(100%);
+  z-index: -2;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@mixin py($val) {
+  padding-top: $val;
+  padding-bottom: $val;
+}
+@mixin px($val) {
+  padding-left: $val;
+  padding-right: $val;
+}
+@mixin my($val) {
+  margin-top: $val;
+  margin-bottom: $val;
+}
+@mixin mx($val) {
+  margin-left: $val;
+  margin-right: $val;
+}
+
+@mixin line-height($lhpx, $fs) {
+  line-height: $lhpx / $fs;
+}
+@mixin letter-spacing($lspc, $fs, $minus: false) {
+  @if $minus {
+    letter-spacing: -$lspc / $fs + em;
+  } @else {
+    letter-spacing: $lspc / $fs + em;
+  }
+}
+
+@function px-to-em($amount, $fontSize) {
+  @return $amount / $fontSize + em;
+}
+@mixin button-shine-effect($shine-op){
+  position: relative;
+   &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,0.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-100px)  skewX(-15deg);
+   }
+   &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255,255,255,$shine-op);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+   }
+   &:hover{
+    &:before{
+      transform: translateX(300px)  skewX(-15deg);  
+      opacity: 0.6;
+      transition: .7s;
+    }
+    &:after{
+      transform: translateX(300px) skewX(-15deg);  
+      opacity: 1;
+      transition: .7s;
+    }
+   }
+}
+
+@mixin button-outline($color,$shine-op:0.4){
+  background: #fff;
+  border-color:$color;
+  color:  $color;
+  overflow: hidden;
+  &:hover,&.active{
+    background: $color;
+    border-color: $color;
+    color: #fff;
+  }
+  &::not(.active){
+    background: $color;
+    border-color: $color;
+    color: #fff;
+    &:hover{
+      background: #fff;
+      border-color:$color;
+      color:  $color;
+    }
+  }
+  &.active{
+    @include button-shine-effect(.4)
+  }
+}
+

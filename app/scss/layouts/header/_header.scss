@@ -1,0 +1,59 @@
+/* Landing One Header Button */
+@use "../../abstracts/colors" as *;
+
+
+.site-header__btn--1{
+    display: flex;
+    justify-content: center;
+    .btn{
+        height: 50px;
+        background: $blue-ribbon;
+        color: #fff;
+        min-width: 95%;
+        border-radius: 5px;
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 0px;
+            border-radius: 500px;
+            min-width: 160px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+.site-header__btn--2{
+    display: flex;
+    justify-content: center;
+    .btn{
+        height: 50px;
+        background: $blue-ribbon;
+        color: #fff;
+        min-width: 95%;
+        border-radius: 5px;
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 0px;
+            border-radius: 500px;
+            min-width: 160px;
+            color: $blue-ribbon;
+            background: #fff;
+        }
+    }
+}
+.site-header__btn--3{
+    display: flex;
+    justify-content: center;
+    .btn{
+        height: 50px;
+        background: $blue-ribbon;
+        color: #fff;
+        min-width: 95%;
+        border-radius: 5px;
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 0px;
+            border-radius: 500px;
+            min-width: 160px;
+        }
+    }
+}
+

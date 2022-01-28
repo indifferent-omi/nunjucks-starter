@@ -1,0 +1,91 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.blog-sidebar{
+    &__single{
+        margin-bottom: 40px;
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 30px;
+        color: #042552;
+        margin-bottom: 30px;
+        &.title-border{
+            position: relative;
+            padding-bottom: 20px;
+            &:after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border: 2px solid #0D59EF;
+            }
+        }
+    }
+    &__list{
+        margin-top: -13px;
+        margin-bottom: -13px;
+        &-single{
+            a{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(#042552,.1);
+                font-size: 16px;
+                line-height: 28px;
+                display: block;
+                transition: .4s;
+                &:hover{
+                    color: var(--bs-primary)!important;
+                    padding-left: 5px;
+                }
+            }
+            &:last-child{
+                a{
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    &__tag{
+        margin: -9px;
+        display: flex;
+        flex-wrap: wrap;
+        &-single{
+            a{
+                margin: 9px;
+            }
+        }
+    }
+}
+
+.blog-page-body{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+
+.pagination-blog{
+    margin-right:-10px ;
+    margin-left:-10px ;
+    .page-item{
+        margin: 0 10px;
+        .page-link{
+            font-size: 16px;
+            line-height: 25px;
+            box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+            @include square(50px,500px);
+            @include flexAllCenter;
+            font-weight: 600;
+            border-color: transparent;
+            color: rgba($vogue,.8);
+            
+        }
+        &.active,&:hover{
+            .page-link{
+                border-color: #FF6C40;
+                background: #FF6C40;
+                color: #fff;
+            }
+        }
+    }
+}

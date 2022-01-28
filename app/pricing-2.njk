@@ -1,0 +1,35 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
+{% import "sections/Pricing/PricingSectionTwo__v2.njk" as PriceSection %}
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--dark",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3 inner-btn"
+  })}}
+    <!-- Breadcrumb Section Start -->
+    {{Breadcrumb.render({
+      "column":"col-xl-8 col-lg-10",
+      "title":"Pricing-2",
+      "text":"An enim nullam tempor donec enim ipsum porta <br class='d-none d-xs-block'> justo  congue purus pretium ligula ",
+      "pageName":"Pricing"
+    })}}
+  <!-- Breadcrumb Section End --> 
+  <!-- Pricing Section Start -->
+  {{PriceSection.render({className:"bg-blue-ribbon-opacity-02"})}}
+  <!-- Pricing Section End -->  
+  <!-- Cta Section Start -->
+  {% include "sections/Cta/CtaSectionOne.njk" %}
+  <!-- Cta Section End -->
+  <!-- Footer Section Start -->
+  {% include "sections/Footer/FooterSectionOneDark.njk" %}
+  <!-- Footer Section End -->
+    
+{% endblock %}

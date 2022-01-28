@@ -1,0 +1,31 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.faq-section--03 {
+  padding: 52px 0 60px;
+  @media (min-width: 575px) {
+    padding: 71px 0 80px;
+  }
+  @media (min-width: 992px) {
+    padding: 128px 0 140px;
+  }
+  .section-title-block{
+    margin-bottom: 40px;
+    @media (min-width: 992px) {
+     margin-bottom: 80px;
+    }
+  }
+  .accordion{
+    .faq-accordion--02{
+      &:last-child{
+        border: 0;
+      }
+    }
+  }
+  &__form,&__list{
+margin-bottom: 30px;
+@media (min-width:992px) {
+  margin-bottom: 0;
+}
+  }
+
+}

@@ -1,0 +1,59 @@
+{
+    "blogPosts":[
+        {
+            "image":"image/blog/blog-p-1.png",
+            "title":"7 Best WordPress Backup Plugins Compared (Pros and Cons)",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"27 September, 2021"
+            }
+        },
+        {
+            "image":"image/blog/blog-p-2.png",
+            "title":"How to Create a Referral Program in WordPress backup plugins",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"10 November, 2021"
+            }
+        },
+        {
+            "image":"image/blog/blog-p-3.png",
+            "title":"7 Best WordPress Backup Plugins Compared (Pros and Cons)",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"27 September, 2021"
+            }
+        },
+        {
+            "image":"image/blog/blog-p-4.png",
+            "title":"How to Remove Unused CSS in WordPress (The Right Way)",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"25 October, 2021"
+            }
+        },
+        {
+            "image":"image/blog/blog-p-5.png",
+            "title":"7 Best WordPress Backup Plugins Compared (Pros and Cons)",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"27 September, 2021"
+            }
+        },
+        {
+            "image":"image/blog/blog-p-6.png",
+            "title":"Free Recording: WordPress Workshop for Beginners referral program",
+            "text":"It is almost impossible to read  coming across a lead story elections through fake social media accounts...",
+            "meta":{
+                "user":"Admin",
+                "date":"13 September, 2021"
+            }
+        }
+        
+    ]
+}

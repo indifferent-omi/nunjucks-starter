@@ -1,0 +1,21 @@
+{% macro render(args) %}
+    {% set brands = [
+        "./image/brand/brand-2/brand-1.png",
+        "./image/brand/brand-2/brand-2.png",
+        "./image/brand/brand-2/brand-3.png",
+        "./image/brand/brand-2/brand-4.png",
+        "./image/brand/brand-2/brand-5.png",
+        "./image/brand/brand-2/brand-6.png"
+    ] %}
+    <div class="brand-section-02">
+        <div class="container">
+            <div class="brand-section-02__wrapper">
+                {% for item in brands %}
+                    <div class="single-brand">
+                        <img src="{{item}}" alt="brand">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

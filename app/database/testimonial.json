@@ -1,0 +1,96 @@
+{
+    "testimonialDataOne":[
+        {
+            "image":"image/testimonial/02-testimonial-user-01.png",
+            "userName":"Mila McSabbu",
+            "userPosition":"Freelance Designer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-02.png",
+            "userName":"Robert Fox",
+            "userPosition":"UI/UX Designer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-03.png",
+            "userName":"Jenny Wilson",
+            "userPosition":"Web Developer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-04.png",
+            "userName":"Jane Cooper",
+            "userPosition":"Marketing Expert",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+        {
+            "image":"image/testimonial/02-testimonial-user-05.png",
+            "userName":"Leslie Alexander",
+            "userPosition":"UI/UX Designer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-06.png",
+            "userName":"Bessie Cooper",
+            "userPosition":"Web Developer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-07.png",
+            "userName":"Jerome Bell",
+            "userPosition":"Freelance Designer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-08.png",
+            "userName":"Kathryn Murphy",
+            "userPosition":"HR Expert",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-09.png",
+            "userName":"Devon Lane",
+            "userPosition":"UX Designer",
+            "text":"OMG! I cannot believe that I have got a new landing page after getting sassmix. It was super easy to edit and publish."
+        }
+    ],
+    "testimonialDataTwo":[
+        {
+            "image":"image/testimonial/02-testimonial-user-01.png",
+            "userName":"Jenny Wilson",
+            "userPosition":"UI/UX Designer",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-02.png",
+            "userName":"Robert Fox",
+            "userPosition":"Web Developer",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-03.png",
+            "userName":"Brooklyn Simmons",
+            "userPosition":"Marketing Expert",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-04.png",
+            "userName":"Jane Cooper",
+            "userPosition":"HR Expert",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        },
+        {
+            "image":"image/testimonial/02-testimonial-user-05.png",
+            "userName":"Leslie Alexander",
+            "userPosition":"UI/UX Designer",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        },
+            {
+            "image":"image/testimonial/02-testimonial-user-06.png",
+            "userName":"Ralph Edwards",
+            "userPosition":"Web Developer",
+            "text":"OMG! I cannot believe that I have got a brand new landing page after getting appmax. It was super easy to edit and publish.I have got a brand new landing page."
+        }
+    ]
+}

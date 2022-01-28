@@ -1,0 +1,39 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "sections/Team/TeamSectionOne__v2.njk" as TeamSection %}
+{% import "sections/Pricing/PricingSectionFive.njk" as PriceSection %}
+
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--light",
+    header_button:true,
+    absolute_header:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3"
+  })}}
+    <!-- Content Section Start -->
+      <div class="error-section bg-blue-ribbon-opacity-02">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-12">
+              <div class="error-section__image text-center">
+                <img src="./image/innerpage/icon-3.svg" alt="icons" class="mw-100">
+              </div>
+                <div class="error-section__content">
+                  <div class="section-title-block text-center">
+                    <h2 class="title">Oops! Page Is Not Available</h2>
+                    <p class=" text-dark">The page you are looking is not available or has been removed. <br class="d-none d-xl-block"> Try going to Home Page by using the button below.</p>
+                    <a href="#" class="btn-60 rounded-full btn-primary btn">Back To Home</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Content Section End -->
+    
+{% endblock %}

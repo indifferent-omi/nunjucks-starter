@@ -1,0 +1,50 @@
+.contact-section--02{
+    padding: 51px 0 60px;
+    @media (min-width:575px) {
+        padding: 71px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 120px 0 130px;
+    }
+    .section-title-block {
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 60px;
+        }
+    }
+    &__form{
+      .contact-form{
+          padding: 0;
+          background: transparent;
+          box-shadow: none;
+      }  
+    }
+}
+
+.contact-section--02__map{
+    padding: 51px 0 60px;
+    @media (min-width:575px) {
+        padding: 71px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 120px 0 123px;
+    }
+    .map-section-02{
+        @media (min-width:992px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+        }
+        iframe{
+            height: 350px;
+            @media (min-width:575px) {
+                height: 400px;
+            }
+            @media (min-width:992px) {
+                height: 644px;
+            }
+        }
+    }
+}

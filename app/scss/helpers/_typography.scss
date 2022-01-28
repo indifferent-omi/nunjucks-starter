@@ -1,0 +1,79 @@
+@use "../abstracts/typography" as *;
+
+.page-title {
+  font-size: 72px;
+  line-height: 79px;
+  letter-spacing: -0.0277777777777778px;
+}
+
+.section-title-block,
+.block-title {
+  .title {
+    @include Section_Heading;
+    span{
+      display: unset;
+    }
+    &--lg{
+      line-height: 1.325;
+      letter-spacing: -1px;
+      font-size:32px;
+      font-weight: 700;
+      @media (min-width:576px){
+        font-size:36px;
+      }
+      @media (min-width:768px){
+        font-size:40px;
+      }
+      @media (min-width:1200px){
+        font-size:45px;
+      }
+      @media (min-width:1400px) {
+        font-size: 48px;
+      }
+    }
+  }
+  .subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 17px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(#042552,0.7);
+    margin-top: 15px;
+  }
+  .fixed-text-width {
+    max-width: 445px;
+  }
+  &.text-center {
+    .fixed-text-width {
+      margin: 0 auto;
+    }
+  }
+}
+.page-title {
+  @include Main_Heading;
+}
+.hero-content{
+  .subtitle{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.388888888888889;
+    margin-bottom: 18px;
+    @media (min-width:768px) {
+        font-size: 18px;
+    }
+}
+p{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  }
+}
+
+
+.fw-semibold{
+  font-weight: 600;
+}

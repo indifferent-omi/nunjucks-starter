@@ -1,0 +1,15 @@
+@use "../abstracts/colors" as color;
+
+$primary: color.$blue-ribbon;
+$secondary : color.$caribbean-green;
+
+$colors: color.$colors;
+
+
+
+$theme-colors: (
+    primary:$primary,
+    secondary:$secondary,
+    dark: color.$textDark,
+    light: color.$textLight
+)

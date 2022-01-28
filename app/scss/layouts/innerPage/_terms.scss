@@ -1,0 +1,37 @@
+.terms-body {
+  padding-top: 51px;
+  padding-bottom: 46px;
+  @media (min-width: 575px) {
+    padding-top: 70px;
+    padding-bottom: 65px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 130px;
+    padding-bottom: 123px;
+  }
+  h3 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: -1px;
+    color: #042552;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #042552;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #042552;
+  }
+  .single-block {
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+
+.cta-section--03{
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    @media (max-width:992px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (min-width:575px) {
+        padding-top: 70px;
+        padding-bottom: 79px;
+    };
+    @media (min-width:992px) {
+        padding-top: 78px;
+        padding-bottom: 88px
+    };
+    &__content{
+        @media (min-width:992px) {
+            // padding-right: 16%;
+        }
+        @media (min-width:1200px) {
+            padding-right: 15%;
+        }
+        @media (min-width:1400px) {
+            padding-right: 14%;
+        }
+    }
+}

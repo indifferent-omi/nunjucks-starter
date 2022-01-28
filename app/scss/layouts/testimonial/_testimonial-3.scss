@@ -1,0 +1,71 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+
+.testimonial-section--03 {
+  padding-bottom: 60px;
+  padding-top: 37px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 575px) {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 134px;
+    padding-bottom: 123px;
+  }
+
+  .section-title-block {
+    margin-bottom: 30px;
+    @media (min-width: 575px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 992px) {
+      margin-bottom: 60px;
+    }
+  }
+  .card {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding: 40px 32px 28px;
+    }
+  }
+}
+.testimonial-slider--02 {
+  .slick-list {
+    margin: 0 -12.5px;
+  }
+  .single-slide {
+    margin: 0 12.5px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+    @media (min-width: 575px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 992px) {
+      margin-top: 60px;
+    }
+    li {
+      button {
+        width: 17px;
+        height: 8px;
+        background: #0d59ef;
+        border-radius: 4px;
+        font-size: 0;
+        border: none;
+        opacity: 0.2;
+        margin: 0 5px;
+        transition: 0.4s;
+      }
+      &.slick-active {
+        button {
+          width: 45px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

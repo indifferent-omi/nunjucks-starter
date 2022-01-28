@@ -1,0 +1,401 @@
+{
+    "portfolio2col":[
+        {
+            "image":"image/portfolio/portfolio-1-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-1-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-1-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-1-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-1-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-1-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolio3col":[
+        {
+            "image":"image/portfolio/portfolio-2-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-7.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-8.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-2-9.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolio4col":[
+        {
+            "image":"image/portfolio/portfolio-3-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-7.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-8.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-9.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-10.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-11.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-12.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-13.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-14.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-15.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {
+            "image":"image/portfolio/portfolio-3-16.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolio3colwide":[
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-3-13.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support customer-support",
+            "image":"image/portfolio/portfolio-3-14.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development marketing design",
+            "image":"image/portfolio/portfolio-3-15.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-3-16.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item development",
+            "image":"image/portfolio/portfolio-3-17.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development design",
+            "image":"image/portfolio/portfolio-3-18.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  design",
+            "image":"image/portfolio/portfolio-3-19.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development ",
+            "image":"image/portfolio/portfolio-3-20.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-3-21.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolio4colwide":[
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  customer-support",
+            "image":"image/portfolio/portfolio-4-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development marketing design",
+            "image":"image/portfolio/portfolio-4-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item development",
+            "image":"image/portfolio/portfolio-4-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development design",
+            "image":"image/portfolio/portfolio-4-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  design",
+            "image":"image/portfolio/portfolio-4-7.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development ",
+            "image":"image/portfolio/portfolio-4-8.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-9.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-10.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-11.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-4-12.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolio5colwide":[
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  customer-support",
+            "image":"image/portfolio/portfolio-5-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development marketing design",
+            "image":"image/portfolio/portfolio-5-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item development",
+            "image":"image/portfolio/portfolio-5-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development design",
+            "image":"image/portfolio/portfolio-5-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  design",
+            "image":"image/portfolio/portfolio-5-7.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development ",
+            "image":"image/portfolio/portfolio-5-8.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-9.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-10.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-11.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-12.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-13.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-14.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-5-15.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ],
+    "portfolioMasonrywide":[
+        {   "ClassName":"grid-item w-50 customer-support development design",
+            "image":"image/portfolio/portfolio-masonry-1.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item w-25 customer-support  customer-support",
+            "image":"image/portfolio/portfolio-masonry-2.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item w-25 development marketing design",
+            "image":"image/portfolio/portfolio-masonry-3.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item w-25 customer-support development design",
+            "image":"image/portfolio/portfolio-masonry-4.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item w-25 development",
+            "image":"image/portfolio/portfolio-masonry-5.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item  development design",
+            "image":"image/portfolio/portfolio-masonry-6.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support  design",
+            "image":"image/portfolio/portfolio-masonry-7.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development ",
+            "image":"image/portfolio/portfolio-masonry-8.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design",
+            "image":"image/portfolio/portfolio-masonry-9.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        },
+        {   "ClassName":"grid-item customer-support development design grid-item--width2",
+            "image":"image/portfolio/portfolio-masonry-10.png",
+            "title":"Creative Case Study",
+            "text":"Web Design"
+        }
+    ]
+}

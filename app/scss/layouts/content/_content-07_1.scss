@@ -1,0 +1,59 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.content-section--13 {
+    padding: 85px 0 55px;
+        @media (min-width:575px) {
+            padding: 107px 0 75px;
+        }
+        @media (min-width:992px) {
+            padding: 125px 0 134px;
+        }
+        @media (min-width:1400px) {
+            padding: 140px 0 133px;
+        }
+    &__image-group{
+        margin-right: 6.41%;
+        border-radius: 10px;
+        box-shadow: (0px 6.16452px 61.6452px rgba(4, 37, 82, 0.1));
+        .image-card-1{
+            position: absolute;
+            top: -11.1%;
+            right: -2.29%;
+            width: 32.93%;
+            border-radius: 10px;
+            box-shadow: (0px 6px 60px rgba(4, 37, 82, 0.1));
+        }
+        .image-card-2{
+            position: absolute;
+            bottom: 5.9%;
+            right: -25%;
+            width: 57.46%;
+            border-radius: 8px;
+            box-shadow: (0px 4.58036px 45.8036px rgba(4, 37, 82, 0.1));
+        }
+    }
+    &__content{
+        .content-section__list{
+            margin-top: 30px;
+            @media (min-width:992px) {
+                margin-top: 40px;
+            }
+        }
+        .btn-link{
+            font-size: 16px;
+            line-height: 1.75;
+            font-weight: 600;
+            margin-top: 30px;
+            @media (min-width:992px) {
+                margin-top: 40px;
+            }
+            &:hover i{
+                margin-left: 15px;
+            }
+            i{
+                margin-left: 10px;
+                transition: 0.4s;
+            }
+        }
+    }
+}

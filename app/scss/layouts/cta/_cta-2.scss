@@ -1,0 +1,29 @@
+.cta-section--02 {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  @media (min-width: 575px) {
+    padding-top: 70px;
+    padding-bottom: 79px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  &__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    @media (min-width: 992px) {
+      padding-left: 0px;
+      padding-right: 0;
+    }
+    @media (min-width: 1200px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .btn {
+      margin-top: 30px;
+    }
+  }
+}

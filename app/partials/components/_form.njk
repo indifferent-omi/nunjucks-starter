@@ -1,0 +1,31 @@
+{% macro contactForm(obj) %}
+<div class="contact-form">
+    <form action="#" method="get">
+        <input class="form-control" type="text" placeholder="Your name">
+        <input class="form-control" type="text" placeholder="Email address">
+        <textarea class="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button class="btn {{obj.className}} rounded-full" type="submit">Submit</button>
+    </form>
+</div>
+{% endmacro %}
+{% macro contactFormTwo(obj) %}
+<div class="contact-form">
+    <form action="#" method="get">
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                        <input class="form-control" type="text" placeholder="Your name">
+            </div>
+            <div class="col-lg-4">
+                    <input class="form-control" type="text" placeholder="Email address">
+            </div>
+            <div class="col-lg-4">
+                    <input class="form-control" type="text" placeholder="Website">
+            </div>
+            <div class="col-12">
+                <textarea class="h-250" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <button class="btn w-auto {{obj.className}} rounded-full" type="submit">Send Message</button>
+        </div>
+    </form>
+</div>
+{% endmacro %}

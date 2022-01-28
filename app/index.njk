@@ -1,7 +1,56 @@
 {% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "sections/Feature/FeatureSectionOne.njk" as FeatureSection %}
+{% import "sections/Pricing/PricingSectionOne.njk" as PriceSection %}
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
 {% block main %}
-    <h1>hello</h1>
-{% endblock %}
-{% block footer %}
-    <h3>this is Footer</h3>
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--dark",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--1"
+  })}}
+  <!-- Hero Section Start -->
+  {% include "sections/Hero/HeroSectionOne.njk" %}
+  <!-- Hero Section End -->  
+  
+  <!-- Feature Section Start -->
+    {{FeatureSection.render()}}
+  <!-- Feature Section End -->
+
+  <!-- Content One Section Start -->
+  {% include "sections/Contents/l1/ContentSectionOne.njk" %}
+  <!-- Content One Section End -->  
+
+  <!-- Fact Section Start -->  
+  {% include "sections/Fact/FactStyleOne.njk" %}
+  <!-- Fact Section End -->  
+
+  <!-- Content Two Section Start -->
+  {% include "sections/Contents/l1/ContentSectionTwo.njk" %}
+  <!-- Content Two Section End -->
+
+    <!-- Pricing Section Start -->
+      {{PriceSection.render()}}
+    <!-- Pricing Section End -->  
+
+  <!-- Testimonial Section Start -->
+  {% include "sections/Testimonial/TestimonialSectionOne.njk" %}
+  <!-- Testimonial Section End -->
+
+  <!-- Cta Section Start -->
+  {% include "sections/Cta/CtaSectionOne.njk" %}
+  <!-- Cta Section End -->
+  
+  <!-- Cta Section Starts -->
+  {% include "sections/Brand/BrandSectionOne.njk" %}
+  <!-- Cta Section End -->
+
+  <!-- Footer Section Start -->
+  {% include "sections/Footer/FooterSectionOne.njk" %}
+  <!-- Footer Section End --> 
 {% endblock %}

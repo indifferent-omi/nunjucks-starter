@@ -1,0 +1,60 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.content-section--14 {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 575px) {
+    padding-top: 76px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 127px;
+    padding-bottom: 140px;
+  }
+  &__shpae{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  .section-title-block{
+    margin-bottom: 40px;
+    @media (min-width:992px) {
+      margin-bottom: 80px;
+    }
+  }
+  &__content{
+    margin-top: 40px;
+    @media (min-width:768px) {
+    margin-top: 80px;
+    }
+    @media (min-width:992px) {
+    margin-top: 100px;
+    }
+    &--texts{
+      .title{
+        margin-bottom: 15px;
+      }
+      p{
+        @media (min-width:1200px) {
+          padding-right: 15%;
+        }
+      }
+      .btn{
+        margin-top: 30px;
+        @media (min-width:922px) {
+          margin-top: 40px;
+        }
+      }
+    }
+    &--image-group{
+      @media (min-width:1400px) {
+        padding-left: 85px;
+      }
+    }
+  }
+}

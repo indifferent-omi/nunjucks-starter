@@ -1,0 +1,72 @@
+@use '../abstracts/mixins' as * ;
+.faq-accordion{
+    &--01{
+        padding: 32px 30px;
+        border-radius: 10px;
+        @media (min-width:575px) {
+            padding: 32px 40px;
+        }
+        .faq-accordion{
+                &__head{
+                    .title{
+                        font-weight: 700;
+                        font-size: 18px;
+                        @include line-height(26px,16px);
+                        color: #042552;
+                        margin-bottom: 0;
+                    }
+                }
+                &__body{
+                    p{
+                        padding-top: 20px; 
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+        }
+        &:not(.collapsed){
+            background: #fff;
+            box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+        }
+    }
+    &--02{
+        border-bottom: 1px solid rgba(13, 89, 239,0.1);
+        width: 100%;
+        padding: 20px 30px;
+        @media (min-width:575px) {
+            padding: 30px 40px;
+        }
+        .faq-accordion{
+                &__head{
+                    padding: 0;
+                    background: transparent;
+                    box-shadow: none;
+                    .title{
+                        font-weight: 700;
+                        font-size: 18px;
+                        @include line-height(28px,16px);
+                        color: #042552;
+                        margin-bottom: 0;
+                        @media (min-wdidth:575px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                &__body{
+                    p{
+                        padding-top: 20px; 
+                        font-size: 14px;
+                        @include line-height(28px,16px);
+                        @media (min-wdidth:575px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+        }
+        &:not(.collapsed){
+            background: #fff;
+            box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+            border-bottom: 0;
+        }
+    }
+}

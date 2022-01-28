@@ -1,0 +1,54 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--light",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3"
+  })}}
+    <!-- Hero Section Start -->
+      {% include "sections/Hero/HeroSectionThree.njk" %}
+    <!-- Hero Section End -->  
+    <!-- Brand Section Start -->
+      {% include "sections/Brand/BrandSectionTwo.njk" %}
+    <!-- Brand Section End -->
+    <!-- Feature Section Start -->
+      {% include "sections/Feature/FeatureSectionThree.njk" %}
+    <!-- Feature Section End -->
+    <!-- About Section Start -->
+      {% include "sections/About/AboutSectionOne.njk" %}
+    <!-- About Section End -->  
+    <!-- Content One Section Start -->
+      {% include "sections/Contents/l3/ContentSectionOne.njk" %}
+    <!-- Content One Section End -->  
+    <!-- Fact Section Start -->
+      {% include "sections/Fact/FactStyleOneV2.njk" %}
+    <!-- Fact Section End -->  
+    <!-- Content Two Section Start -->
+      {% include "sections/Contents/l3/ContentSectionTwo.njk" %}
+    <!-- Content Two Section End -->  
+    <!-- Pricing Section Start -->
+      {% include "sections/Team/TeamSectionOne.njk" %}
+    <!-- Pricing Section End -->
+    <!-- Pricing Section Start -->
+      {% include "sections/Pricing/PricingSectionThree.njk" %}
+    <!-- Pricing Section End -->
+    <!-- Testimonial Section Start -->
+      {% include "sections/Testimonial/TestimonialSectionNine.njk" %}
+    <!-- Testimonial Section End -->
+    <!-- Feature Section Start -->
+      {% include "sections/Cta/CtaSectionThree.njk" %}
+    <!-- Feature Section End -->
+    <!-- Footer Section Start -->
+      {% include "sections/Footer/FooterSectionOneDark.njk" %}
+    <!-- Footer Section End -->
+
+    
+{% endblock %}

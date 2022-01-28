@@ -1,0 +1,85 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.content-section--03 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 575px) {
+    padding-top: 79px;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  &__content {
+    @media (min-width: 1200px) {
+      padding-left: 25px;
+    }
+    @media (min-width: 1400px) {
+      padding-left: 0;
+    }
+
+    .text {
+      @media (min-width: 992px) {
+        padding-right: 10%;
+      }
+      @media (min-width: 1200px) {
+        padding-right: 17%;
+      }
+      @media (min-width: 1400px) {
+        padding-right: 16%;
+      }
+    }
+    .btn{
+      margin-top: 40px;
+    }
+  }
+
+  &__image-group {
+    position: relative;
+    z-index: 1;
+    margin-left: 15.91%;
+    padding-top: 10%;
+    padding-bottom: 4%;
+    @media (min-width: 992px) {
+      margin-left: 19.91%;
+    }
+    .main-image {
+      box-shadow: 0px 3.39573px 33.9573px rgba(4, 37, 82, 0.1);
+      border-radius: 10px;
+    }
+    .main-image-wrapper {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: "";
+        background: $vogue;
+        opacity: 0.05;
+        inset: 0;
+        position: absolute;
+        z-index: 2;
+      }
+    }
+    .image-1 {
+      top: 0%;
+      left: -21%;
+      width: 46.5%;
+      z-index: 3;
+      img {
+        box-shadow: 0px 9px 46px rgba(0, 0, 0, 0.06),
+          0px 24px 38px rgba(0, 0, 0, 0.04);
+        border-radius: 5%;
+        width: 100%;
+      }
+    }
+    .image-2 {
+      bottom: 0%;
+      left: -5%;
+      width: 33.6%;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.screenshot-slider-section {
+  padding: 55px 0 60px;
+  @media (min-width: 575px) {
+    padding: 76px 0 80px;
+  }
+  @media (min-width: 992px) {
+    padding: 135px 0 140px;
+  }
+
+  .section-title-block{
+        margin-bottom: 35px;
+      @media (min-width:992px) {
+       margin-bottom: 80px;
+      }
+  }
+  .screenshot-slider-wrapper {
+    position: relative;
+    .phone-bg-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 11;
+      width: 267px;
+      transform: translate(-50%, -50%);
+      @media (min-width: 690px) {
+          width: 256px;
+          transform: translate(-50%, -50%);
+        display: block;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+  
+  
+    .screenshot-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      overflow: hidden;
+      @media (min-width: 690px) {
+        width: 230px;
+      }
+
+  
+      > img {
+        max-width: 100%;
+        border: 1px solid #efeaf7;
+        filter: drop-shadow(0px 18px 26px rgba(65, 32, 103, 0.06));
+        border-radius: 10px;
+      }
+  
+      .screenshot-slider {
+        .slick-list {
+          margin: 0 -23.5px;
+        }
+  
+        .slick-slide {
+          opacity: 0.5;
+          transition: 0.4s;
+        }
+  
+        .slick-center {
+          opacity: 1;
+          border-radius: 10px;
+          @media (min-width: 850px) {
+              transform: scale(1.1);
+          }
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  .screenshots-dots {
+    margin-top: 35px;
+    @media (min-width:576px) {
+      margin-top: 57px;
+    }
+    @media (min-width:992px) {
+      margin-top: 86px;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 40px;
+      @media (min-width: 575px) {
+        margin-top: 50px;
+      }
+      @media (min-width: 992px) {
+        margin-top: 60px;
+      }
+      li {
+        button {
+          width: 17px;
+          height: 8px;
+          background: #0d59ef;
+          border-radius: 4px;
+          font-size: 0;
+          border: none;
+          opacity: 0.2;
+          margin: 0 5px;
+          transition: 0.4s;
+        }
+        &.slick-active {
+          button {
+            width: 45px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,150 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+.btn {
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &-reset {
+    background: transparent;
+    border: 0;
+  }
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  color: #fff;
+}
+
+.btn-play {
+  @include flexAllCenter;
+  @include square(44px, 500px);
+  background: $white;
+  font-size: 13px;
+}
+
+.btn-60 {
+  @include line-height(26, 18);
+  padding: px-to-em(16, 18) px-to-em(36, 18);
+  font-size: 16px;
+  @media (min-width: 575px) {
+    font-size: 18px;
+  }
+}
+.btn-white {
+  background: #fff;
+  color: $blue-ribbon;
+}
+
+
+.absolute-btn-holder{
+  position: relative; 
+  z-index: 1;
+  .btn-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px,-50px);
+  }
+}
+.btn-video{
+  @include flexAllCenter;
+}
+.btn-video-90{
+  font-size: 16px;
+  @include square(60px,500px);
+  @media (min-width:768px) {
+    @include square(90px,500px);
+  }
+}
+.btn-video-white-blue{
+  color: $blue-ribbon;
+  background: #fff;
+}
+
+
+
+
+.btn-orange--outline{
+  @include button-outline($orange);
+}
+.btn-caribbean-green--outline{
+  @include button-outline($caribbean-green);
+}
+
+.inner-btn{
+  .btn{
+    background: rgba(255, 255, 255,0.2) !important;
+  }
+}
+
+
+.btn-tag{
+  color: rgba(#010C16,0.8);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 21px;
+  padding-bottom: 8px;
+  border: 0.5px solid rgba(#010C16,0.8);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: .4s;
+  &:hover{
+    color: #fff;
+    background: var(--bs-primary);
+    border-color: var(--bs-primary);
+  }
+}
+.btn-outline-orange{
+  color: #FF6C40;
+  border-color: #FF6C40;
+  &.active,
+  &:hover{
+    color: #fff;
+    background-color: #FF6C40;
+  }
+}
+.btn-orange{
+  color: #fff;
+  background-color: #FF6C40;
+  @include button-shine-effect(.4);
+  &:hover{
+    color: #fff;
+  }
+  
+}
+.btn-blue-ribbon{
+  color: #fff;
+  background-color: $blue-ribbon;
+  @include button-shine-effect(.4);
+  &:hover{
+    color: #fff;
+  }
+  
+}
+.btn-blue-ribbon--outline{
+  @include button-outline($blue-ribbon);
+}
+.portfolio-filter-menu {
+  margin: 0 -15px;
+  .btn{
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    @media (max-width:768px) {
+      font-size: 14px !important;
+      width: 120px;
+    }
+  }
+}

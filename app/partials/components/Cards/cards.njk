@@ -1,0 +1,228 @@
+
+{% macro testimonialOne(obj) %}
+    <div class="card card-testimonial--02">
+        <div class="card-testimonial--02__user">
+            <div class="card-testimonial--02__user-image">
+                <img src="{{obj.image}}" alt="">
+            </div>
+            <div class="card-testimonial--02__user-text">
+                <h3 class="user-name">
+                {{obj.name}}</h3>
+                <span class="user-position">
+                {{obj.position}}</span>
+            </div>
+        </div>
+        <p class="card-text">
+            {{obj.text}}
+        </p>
+    </div>
+{% endmacro %}
+{% macro testimonialTwo(obj) %}
+    <div class="card card-testimonial--02 {{obj.modifier}}">
+        <div class="card-testimonial--02__user">
+            <div class="card-testimonial--02__user-image">
+                <img src="{{obj.image}}" alt="">
+            </div>
+            <div class="card-testimonial--02__user-text">
+                <div>
+                    <h3 class="user-name">
+                    {{obj.name}}</h3>
+                    <span class="user-position">
+                    {{obj.position}}</span>
+                </div>
+                <div class="ml-2">
+                    <div class="testimonial-rating">
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="card-text">
+            {{obj.text}}
+        </p>
+    </div>
+{% endmacro %}
+{% macro testimonialTwo__v2(obj) %}
+    <div class="card card-testimonial--02 {{obj.modifier}}">
+         <p class="card-text">
+            {{obj.text}}
+        </p>
+        <div class="card-testimonial--02__user">
+            <div class="card-testimonial--02__user-image">
+                <img src="{{obj.image}}" alt="">
+            </div>
+            <div class="card-testimonial--02__user-text">
+                <div>
+                    <h3 class="user-name">
+                    {{obj.name}}</h3>
+                    <span class="user-position">
+                    {{obj.position}}</span>
+                </div>
+                <div class="ml-2">
+                    <div class="testimonial-rating">
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+{% endmacro %}
+{% macro testimonialTwo__v3(obj) %}
+    <div class="card card-testimonial--02 {{obj.modifier}}">
+         <p class="card-text">
+            {{obj.text}}
+        </p>
+        <div class="card-testimonial--02__user">
+            <div class="card-testimonial--02__user-text">
+                <div>
+                    <h3 class="user-name">
+                    {{obj.name}}</h3>
+                    <span class="user-position">
+                    {{obj.position}}</span>
+                </div>
+                <div class="ml-2">
+                    <div class="testimonial-rating">
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                        <a href="#"><i class="fas fa-star text-yellow"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+{% endmacro %}
+
+{% macro team01(obj) %}
+    <div class="card card-team--01">
+        <div class="card-image">
+            <img src="{{obj.image}}" alt="" class="w-100">
+        </div>
+        <div class="card-texts">
+            <h3 class='card-title{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title}}</h3>
+            <span class='card-text d-block{{" " + obj.textClass if obj.textClass}}'>{{obj.text}}</span>
+            <div class="card-social">
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin-in"></a>
+                <a href="" class="fab fa-facebook-f"></a>
+                <a href="" class="fab fa-twitter"></a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+{% macro team02(obj) %}
+    <div class="card card-team--02">
+        <div class="card-image">
+            <img src="{{obj.image}}" alt="" class="w-100">
+        </div>
+        <div class="card-texts">
+            <span>{{obj.experience}}</span>
+            <h3 class=' heading-dark card-title{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title}}</h3>
+            <p class='card-text text-dark d-block{{" " + obj.textClass if obj.textClass}}'>{{obj.text}}</p>
+        </div>
+    </div>
+{% endmacro %}
+{% macro job01(obj) %}
+    <div class="card card-job--01">
+        <div class="card-job--01__top-content">
+            <div class="card-image">
+                <img src="{{obj.image}}" alt="">
+            </div>
+            <div class="card-texts">
+                <h3 class='card-title heading-dark{{" " + obj.titleClass if obj.titleClass}}'>{{obj.title}}</h3>
+                <span class='card-text text-dark d-block{{" " + obj.textClass if obj.textClass}}'>{{obj.text}}</span>
+            </div>
+        </div>
+        <div class="card-job--01__content">
+            <div class="price-text-box">
+                <i>
+                    <svg class=" d-block" width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8237 11.6056C23.8236 11.6055 23.8236 11.6054 23.8236 11.6053L19.3193 0.295316C19.2237 0.0550077 18.9513 -0.0623071 18.711 0.0332893C18.7108 0.0333478 18.7106 0.0334063 18.7104 0.0335234L0.436945 7.30985C0.362423 7.34205 0.297795 7.39345 0.249616 7.45878C0.0976453 7.53775 0.00163913 7.69406 0 7.86529V20.0417C0 20.3003 0.209691 20.51 0.468323 20.51H20.1379C20.3965 20.51 20.6062 20.3003 20.6062 20.0417V13.3915L23.5623 12.2141C23.8025 12.1183 23.9195 11.8459 23.8237 11.6056ZM19.6696 19.5734H0.936646V8.33361H19.6696V19.5734ZM7.81396 7.3993L15.6556 4.27465C16.3554 5.01027 17.3251 5.42837 18.3405 5.43235L19.1226 7.3993H7.81396ZM20.6062 12.3855V7.86529C20.6062 7.60665 20.3965 7.39696 20.1379 7.39696H20.1304L19.138 4.90455C19.127 4.88377 19.1142 4.86398 19.0996 4.84554C19.0494 4.61998 18.8405 4.46608 18.6102 4.48493C17.6655 4.57104 16.7413 4.17309 16.1548 3.42746C16.0089 3.24733 15.7523 3.20255 15.5539 3.32255C15.5317 3.32519 15.5096 3.32929 15.4879 3.33473L5.91445 7.14688C5.7986 7.19231 5.70593 7.2824 5.65734 7.39696H2.74999L18.6224 1.07695L22.7806 11.5182L20.6062 12.3855Z" fill="#43BA7F"/>
+                    <path d="M2.20938 16.4117C3.11863 16.6805 3.83013 17.3911 4.1 18.3C4.15919 18.4984 4.34166 18.6343 4.54865 18.6344C4.57295 18.6329 4.59707 18.6292 4.62078 18.6236C4.64179 18.6296 4.66328 18.634 4.68494 18.6367H15.9247C15.944 18.6342 15.9631 18.6303 15.9818 18.625C16.2158 18.6819 16.4516 18.5384 16.5086 18.3044C16.5087 18.3036 16.509 18.3027 16.5091 18.3019C16.7783 17.392 17.4899 16.6804 18.3998 16.4112C18.6204 16.3438 18.7575 16.1239 18.721 15.8961C18.7273 15.8734 18.7318 15.8502 18.7346 15.8268V12.0802C18.7319 12.0567 18.7272 12.0335 18.7206 12.0109C18.7573 11.783 18.6201 11.563 18.3993 11.4957C17.4895 11.2266 16.778 10.5147 16.5096 9.60465C16.4418 9.38248 16.2198 9.24503 15.9907 9.28338C15.9691 9.27735 15.947 9.27296 15.9247 9.27026H4.68494C4.66134 9.27307 4.63799 9.27776 4.61516 9.28431C4.38738 9.24802 4.16762 9.38506 4.1 9.60558C3.83066 10.5152 3.1191 11.2266 2.20938 11.4957C1.98874 11.5632 1.85164 11.783 1.88811 12.0109C1.88202 12.0337 1.87763 12.0568 1.875 12.0802V15.8268C1.87769 15.8488 1.88208 15.8706 1.88811 15.8919C1.84971 16.1212 1.9871 16.3435 2.20938 16.4117ZM2.81165 12.2703C3.75204 11.8926 4.49737 11.1473 4.87508 10.2069H15.7341C16.112 11.1473 16.8575 11.8926 17.798 12.2703V15.6366C16.8579 16.0148 16.1127 16.76 15.7345 17.7001H4.87508C4.49696 16.76 3.75174 16.0148 2.81165 15.6366V12.2703Z" fill="#43BA7F"/>
+                    <path d="M10.3021 16.7634C11.854 16.7634 13.1121 15.5054 13.1121 13.9535C13.1121 12.4016 11.854 11.1436 10.3021 11.1436C8.75022 11.1436 7.49219 12.4016 7.49219 13.9535C7.49371 15.5048 8.75086 16.7619 10.3021 16.7634ZM10.3021 12.0802C11.3367 12.0802 12.1754 12.9189 12.1754 13.9535C12.1754 14.9881 11.3367 15.8268 10.3021 15.8268C9.26754 15.8268 8.42883 14.9881 8.42883 13.9535C8.42883 12.9189 9.26754 12.0802 10.3021 12.0802Z" fill="#43BA7F"/>
+                    <path d="M5.1517 14.6559C5.53965 14.6559 5.85419 14.3414 5.85419 13.9535C5.85419 13.5655 5.53965 13.251 5.1517 13.251C4.76376 13.251 4.44922 13.5655 4.44922 13.9535C4.44922 14.3415 4.76376 14.6559 5.1517 14.6559ZM5.1517 13.7193C5.28102 13.7193 5.38586 13.8241 5.38586 13.9535C5.38586 14.0828 5.28102 14.1876 5.1517 14.1876C5.02239 14.1876 4.91754 14.0828 4.91754 13.9535C4.91754 13.8241 5.02239 13.7193 5.1517 13.7193Z" fill="#43BA7F"/>
+                    <path d="M15.4564 14.6559C15.8443 14.6559 16.1589 14.3414 16.1589 13.9535C16.1589 13.5655 15.8443 13.251 15.4564 13.251C15.0684 13.251 14.7539 13.5655 14.7539 13.9535C14.7539 14.3415 15.0684 14.6559 15.4564 14.6559ZM15.4564 13.7193C15.5857 13.7193 15.6906 13.8241 15.6906 13.9535C15.6906 14.0828 15.5857 14.1876 15.4564 14.1876C15.3271 14.1876 15.2222 14.0828 15.2222 13.9535C15.2222 13.8241 15.3271 13.7193 15.4564 13.7193Z" fill="#43BA7F"/>
+                    </svg>
+                </i>
+                <span class="text-dark">{{obj.price}} /month</span>
+            </div>
+            <div class="button-group">
+                <a href="#" class="job-btn-1">Full Time</a>
+                <a href="#" class="job-btn-2">Apply Now</a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{% macro blog(obj) %}
+    <div class="card-blog">
+        {% if obj.image %}
+            <div class="card-image">
+                <img src="{{obj.image}}" alt="">
+            </div>
+        {% endif %}
+        <div class="card-inner">
+            <div class="blog-meta">
+            <a href="">Admin</a>
+            <a href="">17 November, 2021</a>
+            </div>
+            <h3 class="card-title">How to Create a Referral Program in WordPress backup plugins</h3>
+            <p>It is almost impossible to read  coming across a lead story elections through fake social media accounts...</p>
+            <a href="" class="btn btn-blue-ribbon--outline rounded-full border-2">Read More</a>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro commentCard(obj) %}
+    <div class="card-user">
+        <img src="{{obj.img}}" alt="user">
+    </div>
+    <div class="card-content">
+        <p class="text-dark">{{obj.text}}</p>
+        <div class="card-content__info">
+            <div class="user-detail">
+                <h6>{{obj.name}}</h6>
+                <span class="text-dark">{{obj.date}}</span>
+            </div>
+            <div class="user-respons">
+                <button class="text-dark">Reply</button>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
+{% macro portfolio(obj) %}
+    <div class="card card-portfolio{{" "+ obj.modifier if obj.modifier}}">
+          <img src="{{obj.image}}" alt="portfolio" class="w-100">
+        <div class="card-texts">
+            <h3 class="card-title">{{obj.title}}</h3>
+            <span>{{obj.text}}</span>
+            <a href="#" class="btn">Full View</a>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro career(obj) %}
+    <div class="card card-career">
+        <h3 class="card-title">{{obj.title}}</h3>
+        <p>{{obj.text}}</p>
+        <ul class="card-list list-unstyled">
+            <li><span class="icon"><img src="./image/icons/icon-map-icon.svg" alt="icon"></span><span>{{obj.location}}</span></li>
+            <li><span class="icon"><img src="./image/icons/icon-clock.svg" alt="icon"></span><span>{{obj.jobType}}</span></li>
+        </ul>
+        <a href="" class="card-button">Learn the details <i class="fas fa-arrow-right"></i></a>
+    </div>
+{% endmacro %}

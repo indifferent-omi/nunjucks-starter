@@ -1,0 +1,79 @@
+.pricing-section--03 {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  position: relative;
+  @media (min-width: 575px) {
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 134px;
+    padding-bottom: 139px;
+  }
+  &__circle-1{
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    background: #FF1181;
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+    border-radius: 500px;
+}
+&__circle-2{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    background: #645CFE;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    border-radius: 500px;
+}
+&__circle-3{
+    position: absolute;
+    bottom: 42%;
+    right: 12%;
+    background: #FF6C40;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    border-radius: 500px;
+}
+  .section-title-block {
+    margin-bottom: 37px;
+    @media (min-width: 575px) {
+      padding: 0 7%;
+      margin-bottom: 50px;
+    }
+    @media (min-width: 992px) {
+      padding: 0 7%;
+      margin-bottom: 77px;
+    }
+    @media (min-width: 1200px) {
+      padding: 0 8%;
+    }
+  }
+  .card-pricing--01 {
+    &__list {
+      @media (min-width: 1400px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+  .pricing-btn {
+    margin-bottom: 23px;
+    @media (min-width: 575px) {
+      margin-bottom: 60px;
+    }
+  }
+  &__shape{
+    position: absolute;
+    min-width: 30px;
+    width: 3.153%;
+    left: 0.5%;
+    top: 9%;
+    z-index: -5;
+  }
+}

@@ -1,0 +1,109 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.content-section--07 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 575px) {
+    padding-top: 81px;
+    padding-bottom: 80px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 135px;
+    padding-bottom: 136px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  &__content {
+    @media (min-width: 1200px) {
+      padding-right: 25px;
+    }
+    @media (min-width: 1400px) {
+      padding-right: 10%;
+    }
+
+    .text {
+      @media (min-width: 992px) {
+        padding-right: 10%;
+      }
+      @media (min-width: 1200px) {
+        padding-right: 17%;
+      }
+      @media (min-width: 1400px) {
+        padding-right: 16%;
+      }
+    }
+    .btn {
+      margin-top: 32px;
+    }
+  }
+  &__shape{
+    position: absolute;
+    width: 27.5%;
+    top: 7%;
+    left: 0;
+    z-index: -1;
+  }
+  &__image-group {
+    position: relative;
+    z-index: 1;
+    margin-right: 7.3%;
+    padding-bottom: 15%;
+    .main-image {
+      box-shadow: 0px 5.88918px 58.8918px rgba(4, 37, 82, 0.1);
+      border-radius: 11.6076px;
+    }
+    .main-image-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+    .image-1 {
+      bottom: 0;
+      right: -8%;
+      width: 46.7%;
+      z-index: 3;
+      img {
+        box-shadow: 0px 5.88918px 58.8918px rgba(4, 37, 82, 0.1);
+        border-radius: 3.4%;
+        width: 100%;
+      }
+    }
+  }
+  &__counter-block {
+    display: flex;
+    .single-counter {
+      margin-top: 25px;
+      margin-right: 50px;
+      @media (min-width: 575px) {
+        margin-top: 30px;
+      }
+      @media (min-width: 992px) {
+        margin-top: 40px;
+      }
+      @media (min-width: 1400px) {
+        margin-right: 75px;
+      }
+      .count {
+        @include line-height(72, 60);
+        @include letter-spacing(2, 60, true);
+        color: #0d59ef;
+        margin-bottom: 0;
+
+        font-size: 42px;
+        @media (min-width: 575px) {
+          font-size: 50px;
+        }
+        @media (min-width: 992px) {
+          font-size: 60px;
+        }
+      }
+      span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #042552;
+      }
+    }
+  }
+}

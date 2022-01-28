@@ -1,0 +1,57 @@
+.portfolio-section-padding{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    .grid-container{
+        display: grid;
+        grid-template-columns: 60px 60px;
+    }
+    .col-item{
+        @media (min-width:1200px) {
+            width: 20% !important;
+        }
+        .card{
+            border-radius: 0 !important;
+        }
+    }
+}
+
+.w-25{
+    width: 25%;
+}
+.w-50{
+width: 50%;
+}
+
+
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 1px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 1px;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #ccc;
+    border-radius: 10px;
+    &:nth-child(odd) {
+        background-color: #ccc;
+    }
+}
+
+.w-25{
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.w-50{
+    grid-column-end: span 3;
+    grid-row-end: span 4;
+}

@@ -1,0 +1,41 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Cards/cards.njk" as Card %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--dark",
+    absolute_header:true,
+    header_button:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3 inner-btn"
+  })}}
+    <!-- Breadcrumb Section Start -->
+    {{Breadcrumb.render({
+      "column":"col-xl-8 col-lg-10",
+      "title":"Career",
+      "text":"An enim nullam tempor donec enim ipsum porta <br class='d-none d-xs-block'> justo  congue purus pretium ligula ",
+      "pageName":"Career"
+    })}}
+  <!-- Breadcrumb Section End --> 
+  <!-- About Section Start -->
+  {% include "sections/careers/career/_about.njk" %}
+  <!-- About Section Ends -->
+  <!-- Job Section Start -->
+  {% include "sections/careers/career/_job.njk" %}
+  <!-- Job Section End -->
+  <!-- Fact Section Start -->
+    {% include "sections/Fact/FactStyleOneV2.njk" %}
+  <!-- Fact Section End -->  
+  <!-- Career Section Start -->
+  {% include "sections/Brand/BrandSectionFive.njk" %}
+  <!-- Career Section Ends -->
+  <!-- Footer Section Start -->
+  {% include "sections/Footer/FooterSectionOneDark.njk" %}
+  <!-- Footer Section End -->
+    
+{% endblock %}

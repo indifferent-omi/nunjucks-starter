@@ -1,0 +1,33 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+
+.testimonial-section--02 {
+  padding-bottom: 60px;
+  padding-top: 37px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: 575px) {
+    padding-top: 70px;
+    padding-bottom: 76px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 134px;
+    padding-bottom: 123px;
+  }
+
+  .section-title-block {
+    margin-bottom: 30px;
+    @media (min-width: 575px) {
+      margin-bottom: 50px;
+    }
+    @media (min-width: 992px) {
+      margin-bottom: 60px;
+    }
+  }
+  .card {
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding: 40px 32px 28px;
+    }
+  }
+}
+

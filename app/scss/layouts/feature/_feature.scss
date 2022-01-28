@@ -1,0 +1,64 @@
+.feature-section--01{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    @media (min-width:575px) {
+        padding-top: 67px;
+        padding-bottom: 81px;
+    }
+    @media (min-width:992px) {
+        padding-top: 127px;
+        padding-bottom: 136px;
+    }
+    .section-title-block{
+        margin-bottom: 30px;
+        @media (min-width:575px) {
+            margin-bottom: 55px;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 110px;
+            padding: 0 10px;
+        }
+        @media (min-width:1200px) {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+        @media (min-width:1400px) {
+            padding-left:10px;
+            padding-right:10px;
+        }
+        .title{
+            @media (min-width:1200px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            @media (min-width:1200px) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+    }
+    &__shape{
+        position: absolute;
+        min-width: 30px;
+        width: 3.153%;
+        left: 0.5%;
+        top: 20%;
+    }
+    &__widgets{
+        .widget{
+             @media (min-width:768px) {
+                padding: 0 10%;
+              }
+             @media (min-width:992px) {
+                padding: 0 5%;
+              }
+              @media (min-width:1200px) {
+                padding: 0 12%;
+              }
+              @media (min-width:1400px) {
+                padding: 0 13%;
+              }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.shop-sidebar{
+    &__single{
+        margin-bottom: 40px;
+        &:not(:first-child){
+            padding:0 25px;
+        }
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 30px;
+        color: #042552;
+        margin-bottom: 30px;
+        &.title-border{
+            position: relative;
+            padding-bottom: 20px;
+            &:after{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                border: 2px solid #0D59EF;
+            }
+        }
+    }
+    &__list{
+        margin-top: -13px;
+        margin-bottom: -13px;
+        &-single{
+            a{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(#042552,.1);
+                font-size: 16px;
+                line-height: 28px;
+                display: block;
+                transition: .4s;
+                &:hover{
+                    color: var(--bs-primary)!important;
+                    padding-left: 5px;
+                }
+            }
+            &:last-child{
+                a{
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    &__tag{
+        margin: -9px;
+        display: flex;
+        flex-wrap: wrap;
+        &-single{
+            a{
+                margin: 9px;
+            }
+        }
+    }
+}
+.sidebar-product{
+    margin-bottom: -20px;
+    .widget{
+        margin-bottom: 20px;
+    }
+}
+
+.sidebar-cart{
+    .button-group{
+        display: flex;
+        margin: 50px -10px -10px;
+        .btn{
+            margin: 5px;
+        }
+    }
+    .btn{
+        padding: 12px 20px;
+        font-size: 16px;
+        overflow: hidden;
+    }
+}
+.shop-sidebar{
+    .shop-sidebar__tag{
+        margin: -6px;
+    }
+    .btn-tag{
+        padding-top:8.5px;
+        padding-bottom:8.5px;
+        padding-left:20px;
+        padding-right:20px;
+        margin: 6px;
+    }
+}

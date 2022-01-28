@@ -1,0 +1,13 @@
+{
+  "innerPageHeader":{
+    "additional_header_class":"site-header--menu-center bg-transparent site-header--dark",
+    "absolute_header":true,
+    "header_double_button":true,
+    "header_button":false,
+    "additional_db_classes":"site-header__btns--01",
+    "header_button_class_1":"btn btn-transparent btn-1",
+    "header_button_text_1" :"Login",
+    "header_button_class_2":"btn btn-secondary btn-secondary-hvr btn-2 rounded",
+    "header_button_text_2" :"Sign Up"
+  }
+}

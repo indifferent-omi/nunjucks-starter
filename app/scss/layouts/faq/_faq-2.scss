@@ -1,0 +1,45 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+.faq-section--02 {
+  padding-top: 54px;
+  padding-bottom: 23px;
+  @media (min-width: 575px) {
+    padding-top: 74px;
+    padding-bottom: 45px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 140px;
+    padding-bottom: 110px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 126px;
+  }
+  &__content {
+    @media (min-width: 992px) {
+      padding-right: 5%;
+    }
+    @media (min-width: 992px) {
+      padding-right: 0%;
+    }
+    @media (min-width: 1200px) {
+      padding-right: 5%;
+    }
+    @media (min-width: 1400px) {
+      padding-right: 0%;
+    }
+
+    .text {
+      @media (min-width: 992px) {
+        padding-right: 10%;
+      }
+      @media (min-width: 1200px) {
+        padding-right: 12%;
+      }
+      @media (min-width: 1400px) {
+        padding-right: 12%;
+      }
+    }
+  }
+
+}

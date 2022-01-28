@@ -1,13 +1,32 @@
-@import 'helpers/variables';
-@import 'helpers/media-query';
-@import 'helpers/mixins';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'components/header';
-@import 'components/banner';
-@import 'components/buttons';
-@import 'components/typography';
-@import 'components/cards';
-@import 'components/footer';
-@import 'layout.scss';
+/*********** CSS TABLE OF CONTENTS *******************
+
+|--- 01.Component -> { Header }
+|--- 01.Component -> { Menu }
+|--- 01.Component -> { Button }
+|--- 01.Component -> { Lists }
+|--- 01.Component -> { Background }
+|--- 01.Component -> { Form }
+|--- 01.Component -> { Cards }
+|--- 01.Component -> { Modal }
+|--- 01.Component -> { Tab }
+|--- 01.Component -> { Acccordion }
+|--- 01.Component -> { Sidebar }
+|--- THEME CUSTOM STYLES
+
+******************************************************/
+
+@use "helpers/typography";
+@use "components";
+@use "helpers";
+@use "layouts";
+
+
+
+
+/* ---------------------------------
+-------> THEME CUSTOM STYLES 
+---------------------------------
+*/
+// @import "theme-custom-styles";
+
+

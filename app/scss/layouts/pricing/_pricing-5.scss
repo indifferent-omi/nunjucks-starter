@@ -1,0 +1,68 @@
+.pricing-section--05{
+    padding-top:50px;
+    padding-bottom:60px;
+    @media (min-width:575px) {
+        padding-top:66px;
+        padding-bottom:80px;
+    }
+    @media (min-width:992px) {
+        padding-top:131px;
+        padding-bottom:140px;
+    }
+    .section-title-block{
+        margin-bottom: 30px;
+        @media (min-width:575px) {
+            margin-bottom: 37px;
+        }
+    }
+    &__pricing-trigger{
+        margin-bottom: 30px;
+        @media (min-width:575px) {
+            margin-bottom: 60px;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 60px;
+        }
+    }
+    .card-pricing--02{
+        &__list{
+            @media (min-width:1400px) {
+                padding-left: 30px;
+                padding-right: 30px;
+              }
+        }
+    }
+}
+
+.pricing-center-row-2-col{
+    .slick-slide{
+        padding: 0 12.5px;
+    }
+    @media (min-width:992px) {
+        margin-left: -20px;
+        @media (min-width:1200px) {
+            margin-left: -30px;
+        }
+        @media (min-width:1400px) {
+            margin-left: 0px;
+        }
+        [class^="col-"]:first-child .card-v4{
+            left: 20px;
+            @media (min-width:1200px) {
+                left: 30px;
+            }
+            @media (min-width:1400px) {
+                left: 40px;
+            }
+        }
+        .card-v4{
+            box-shadow: 0px 4px 60px rgba(13, 89, 239, 0.06);
+            transform: scale(0.99);
+            &.active{
+                box-shadow: 0px 6px 60px rgba(4, 37, 82, 0.1);
+                transform: scale(1);
+                z-index: 9;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@use "../../abstracts/colors"as color;
+@use '../../abstracts/mixins' as * ;
+
+/*---------------------------------
+        Hero Section 05
+-----------------------------------*/ 
+.hero-section--05{
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 32px;
+    @media (min-width:575px) {
+        padding-top: 130px;
+    }
+    @media (min-width:992px) {
+        padding-top: 55px;
+    }
+    @media (min-width:1200px) {
+        padding-top: 35px;
+    }
+    &__content{
+        .page-title{
+            margin-bottom: 25px;
+        }
+        p{
+            margin-bottom: 40px;
+        }
+        .form-filter-search{
+            max-width: 626px;
+        }
+    }
+    &__image{
+        z-index: -1;
+        @media (min-width:480px) {
+            margin-top: 50px; 
+        }
+        @media (min-width:992px) {
+            margin-top: 0;
+        }
+        position: relative;
+        &--card-one{
+            position: absolute;
+            top: 35%;
+            left: 3%;
+            width: 30.2%;
+            @media (min-width:575px) {
+                top: 38%;
+                left: -8%;
+            }       
+            img{
+                box-shadow: 0px 4.98701px 49.8701px rgba(4, 37, 82, 0.1)
+            }
+        }
+        &--card-two{
+            position: absolute;
+            bottom: 3%;
+            right: 6%;
+            width: 36.5%; 
+            @media (min-width:575px) {
+                bottom: 13%;
+                right: -14%;
+            }       
+          img{
+             box-shadow: 0px 6px 60px rgba(4, 37, 82, 0.1); 
+          }  
+        }
+    }
+    &__shape{
+        position: absolute;
+        min-width: 30px;
+        width: 3.153%;
+        right: 0.5%;
+        top: 28%;
+        z-index: -5;
+    }
+}
+

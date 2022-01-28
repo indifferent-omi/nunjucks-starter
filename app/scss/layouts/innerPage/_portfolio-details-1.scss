@@ -1,0 +1,95 @@
+.portfolio-details--01{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__slider{
+       .single-img{
+           img{
+               width: 100%;
+               object-fit: cover;
+               @media (min-width:992px) {
+                   height: 400px;
+               }
+               @media (min-width:1200px) {
+                   height: 620px;
+               }
+           }
+       } 
+        /* the slides */
+        .slick-slide {
+        margin: 0 12px;
+        }
+        /* the parent */
+        .slick-list {
+        margin: 0 -12px;
+        }
+        }
+        .portfolio-dots{
+            margin-top: 35px;
+        }
+        &__content-one{
+            padding: 20px 0 40px;
+            @media (min-width:992px) {
+                padding: 50px 0 80px;
+            }
+            .section-details{
+                margin: 30px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                @media (max-width:575px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .details{
+                    &:not(&:last-child){
+                        margin-bottom: 15px;
+                    }
+                    }
+                }
+            }
+        }
+        &__content-two{
+            .section-title-block{
+                margin-bottom: 30px;
+                @media (min-width:992px) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+}
+.section-details{
+    .details{
+        display: flex;
+        align-items: center;
+        h6{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px; 
+            color: #377CFD;
+            span{
+                color: #042552;
+                font-weight: normal;
+            }
+        }
+        .social-tag{
+            margin-left: 14px;
+            display: flex;
+            align-items: center;
+            margin: 0;padding: 0;
+            li{
+                a{
+                    padding: 7.5px;
+                    color: #042552;
+                    &:hover{
+                        color: #FF6C40;
+                    }
+                }
+            }
+        }
+    }
+}

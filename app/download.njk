@@ -1,0 +1,39 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "sections/Team/TeamSectionOne__v2.njk" as TeamSection %}
+{% import "sections/Pricing/PricingSectionFive.njk" as PriceSection %}
+
+{% set PAGE_INFO = {
+    color_scheme : "1"
+  }
+%}
+{% block main %}
+  {{Header.render({
+    additional_header_class:"site-header--menu-center bg-transparent site-header--light",
+    header_button:true,
+    absolute_header:true,
+    header_button_text:"Try It Free",
+    additional_button_classes:" site-header__btn--3"
+  })}}
+    <!-- Content Section Start -->
+      <div class="download-section bg-blue-ribbon-opacity-02">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-9 col-sm-10">
+              <div class="download-section__image">
+                <img src="./image/innerpage/file.png" alt="icons" class=" w-100">
+              </div>
+                <div class="download-section__content">
+                  <div class="section-title-block text-center">
+                    <h2 class="title">Download Saasmix</h2>
+                    <p class=" text-dark">Your download should begin shortly. If it doesn't start automatically, try downloading below.</p>
+                    <a href="#" class="btn-60 rounded-full btn-primary btn">Download Now</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Content Section End -->
+    
+{% endblock %}

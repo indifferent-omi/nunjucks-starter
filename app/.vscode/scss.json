@@ -1,0 +1,18 @@
+{
+    "use absolute folders color": {
+        "scope": "SCSS",
+        "prefix": "useabscolor",
+        "body": [
+            "@use '../abstracts/colors' as * ;"
+        ],
+        "description": "font family font Awesome"
+    },
+    "use absolute folders mixin": {
+        "scope": "SCSS",
+        "prefix": "useutil",
+        "body": [
+            "@use '../abstracts/mixins' as * ;"
+        ],
+        "description": "font family font Awesome"
+    }
+}
